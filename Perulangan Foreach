@@ -1,0 +1,30 @@
+public class ForeachArray {
+    public static void main(String[] args) {
+        
+        // 1. Array bertipe String
+        String[] mataKuliah = {"PBO", "Struktur Data", "Algoritma", "Basis Data"};
+        
+        System.out.println("--- Foreach Array String ---");
+        
+        // Loop foreach untuk String
+        for (String mk : mataKuliah) {
+            System.out.println("Mata Kuliah: " + mk);
+        }
+        
+        System.out.println("\n-------------------------");
+        
+        // 2. Array bertipe Integer
+        int[] nilai = {85, 90, 78, 92, 88};
+        int totalNilai = 0;
+
+        System.out.println("--- Foreach Array Integer dan Total ---");
+        
+        // Loop foreach untuk Integer sekaligus menghitung total
+        for (int angka : nilai) {
+            System.out.println("Nilai ditemukan: " + angka);
+            totalNilai += angka;
+        }
+        
+        System.out.println("Total keseluruhan nilai: " + totalNilai);
+    }
+}
