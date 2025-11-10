@@ -1,0 +1,31 @@
+public class SegitigaBintang {
+    public static void main(String[] args) {
+        int tinggi = 5;
+        System.out.println("--- Half Triangle ---");
+        
+        // 1. Half Triangle
+        for (int i = 1; i <= tinggi; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        System.out.println("\n--- Full Triangle ---");
+        
+        // 2. Full Triangle (Piramida)
+        for (int i = 1; i <= tinggi; i++) {
+            // Cetak Spasi (tinggi - i)
+            for (int j = 1; j <= tinggi - i; j++) {
+                System.out.print(" ");
+            }
+            
+            // Cetak Bintang ((2 * i) - 1)
+            for (int k = 1; k <= (2 * i) - 1; k++) {
+                System.out.print("*");
+            }
+            
+            System.out.println(); // Pindah baris
+        }
+    }
+}
