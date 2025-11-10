@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class MaxMin10 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int max = Integer.MIN_VALUE; 
+        int min = Integer.MAX_VALUE;
+        int bilangan;
+
+        System.out.println("Masukkan 10 bilangan:");
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.print("Bilangan ke-" + i + ": ");
+            bilangan = scanner.nextInt();
+
+            // Cek nilai maksimum
+            if (bilangan > max) {
+                max = bilangan;
+            }
+
+            // Cek nilai minimum
+            if (bilangan < min) {
+                min = bilangan;
+            }
+        }
+
+        System.out.println("\n--- Hasil ---");
+        System.out.println("Bilangan terbesar: " + max);
+        System.out.println("Bilangan terkecil: " + min);
+        
+        scanner.close();
+    }
+}
