@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class JumlahRataRata {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N;
+        double total = 0;
+        int bilangan;
+        System.out.print("Masukkan jumlah bilangan yang akan diinput (N): ");
+        N = scanner.nextInt();
+
+        if (N <= 0) {
+            System.out.println("Jumlah bilangan harus lebih dari 0.");
+            return;
+        }
+
+        System.out.println("Masukkan " + N + " bilangan:");
+        
+        for (int i = 1; i <= N; i++) {
+            System.out.print("Bilangan ke-" + i + ": ");
+            bilangan = scanner.nextInt();
+            total += bilangan;
+        }
+
+        // Hitung rata-rata
+        double rataRata = total
+
+        System.out.println("\n--- Hasil ---");
+        System.out.println("Total jumlah bilangan: " + (int)total);
+        System.out.printf("Rata-rata: %.2f\n", rataRata); 
+        
+        scanner.close();
+    }
+}
