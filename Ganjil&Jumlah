@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class GanjilDanJumlah {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N;
+        int totalPenjumlahan = 0;
+        int hitungGanjil = 0;
+        int bilanganSaatIni = 1;
+        System.out.print("Masukkan banyak angka (N): ");
+        N = scanner.nextInt();
+
+        System.out.print("Angka Ganjil: ");
+        
+        while (hitungGanjil < N) {
+            
+            if (bilanganSaatIni % 2 != 0) {
+                System.out.print(bilanganSaatIni + " ");
+                
+                totalPenjumlahan += bilanganSaatIni;
+                
+                hitungGanjil++;
+            }
+            
+            bilanganSaatIni++;
+        }
+        
+        System.out.println();
+        System.out.println("Total penjumlahan: " + totalPenjumlahan);
+        
+        scanner.close();
+    }
+}
