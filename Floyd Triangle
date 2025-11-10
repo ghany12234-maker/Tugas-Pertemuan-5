@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class FloydTriangle {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int jumlahBaris = 5;
+        int angkaSaatIni = 1; 
+
+        System.out.print("Masukkan banyak baris: " + jumlahBaris);
+        System.out.println("\n--- Floyd's Triangle ---");
+
+        for (int i = 1; i <= jumlahBaris; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(angkaSaatIni + " ");
+                angkaSaatIni++;
+            }
+            System.out.println();
+        }
+
+    }
+}
