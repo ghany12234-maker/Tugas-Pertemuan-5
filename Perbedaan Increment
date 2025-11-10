@@ -1,0 +1,26 @@
+public class PerbedaanIncrement {
+    public static void main(String[] args) {
+        
+        int a = 5;
+        int hitungA = 0;
+        
+        System.out.println("--- i++ (Post-increment) ---");
+        while (hitungA < 3) {
+            System.out.println("Nilai yang dicetak: " + a++); 
+            hitungA++;
+        }
+        System.out.println("Nilai akhir a: " + a); // Nilai akhir adalah 8
+        
+        System.out.println("\n-------------------------");
+        
+        int b = 5;
+        int hitungB = 0;
+        
+        System.out.println("--- ++i (Pre-increment) ---");
+        while (hitungB < 3) {
+            System.out.println("Nilai yang dicetak: " + ++b); 
+            hitungB++;
+        }
+        System.out.println("Nilai akhir b: " + b); // Nilai akhir juga 8
+    }
+}
